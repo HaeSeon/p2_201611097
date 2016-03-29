@@ -1,0 +1,27 @@
+
+# coding: utf-8
+
+# In[ ]:
+
+import turtle
+
+wn=turtle.Screen()
+
+t1=turtle.Turtle()
+
+def makeInfiniteMaze(size,larger,sides,angle):
+     for i in range(0,sides):
+          if(i%2):
+              size=size+larger
+          t1.right(90)
+          t1.fd(size)
+          
+
+makeInfiniteMaze(15,15,30,90)
+
+wn.exitonclick()
+
+
+
+
+
