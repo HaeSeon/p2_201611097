@@ -1,0 +1,29 @@
+@startuml
+
+title Conditional - rockscissorspaper 
+
+
+start
+
+:get user input a;
+:get user input b;
+if (a=='s')
+    if ( b=='s')
+    :print "draw";
+    elseif (b=='p')
+    :print "scissors win";
+    elseif (b=='r')
+    :print "rock win";
+if (a=='r')
+    if (b=='r')
+    :print "draw";
+    elseif (b=='p')
+    :print "paper win";
+if (a=='p')
+    if (b=='p')
+    :print "draw";
+endif
+:print result;
+stop
+
+@enduml
