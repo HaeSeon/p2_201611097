@@ -1,0 +1,12 @@
+﻿start
+:input number;
+:range(0,100);
+:guess=0;
+if(input number=my number)
+:print correct(guess X);
+elseif(input number>my number)
+:print low;
+elseif(input number<my number)
+:print high;
+endif
+stop
