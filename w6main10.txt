@@ -1,6 +1,5 @@
 ﻿start
 :input number;
-:range(0,100);
 :guess=0;
 if(input number=my number)
 :print correct(guess X);
