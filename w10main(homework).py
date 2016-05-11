@@ -1,26 +1,14 @@
-﻿def Schooldata():
+﻿
+def Schooldata(data):
 
-    SchoolData=list()
-    SchoolData=[
-        ["division","very good","good","so-so","bad","very bad"],
-        ["Training content",13.1, 37.1, 39.6, 8.7, 1.5],
-        ["Training Methods",10.6, 34.6, 39.5, 13.4, 1.9],
-        ["friendships",27.1, 40.0, 28.5, 2.9, 1.5],
-        ["Relation with teacher",16.2, 37.8, 38.4, 6.8, 0.8],
-        ["School Facilities",11.4, 29.8, 39.0, 14.8, 4.9],
-        ["School environment",12.2, 26.5, 42.0, 14.9, 4.4],
-        ["specialism",13.5, 29.7, 43.4, 11.1, 2.4],
-        ["school life",13.7, 37.6, 43.3, 4.1, 1.2]
-        ]
- 
-    data=SchoolData[1:]
+
 
     for i in range(0,len(data)):
         print "average of very good and good :",str((data[i][1]+data[i][2])/2)
         print "average of vert bad and bad:",str((data[i][4]+data[i][5])/2)
 
 
-def Speech1():
+def Speech1(speech1):
     doc=speech1
     d=dict()
     for line in doc:
@@ -36,7 +24,7 @@ def Speech1():
             print "speech1:",k
    
     
-def Speech2():
+def Speech2(speech2):
     doc=speech2
     d1=dict()
     for line in doc:
@@ -53,8 +41,23 @@ def Speech2():
 
             
 def lab10():
+    
+    SchoolData=list()
+    SchoolData=[
+        ["division","very good","good","so-so","bad","very bad"],
+        ["Training content",13.1, 37.1, 39.6, 8.7, 1.5],
+        ["Training Methods",10.6, 34.6, 39.5, 13.4, 1.9],
+        ["friendships",27.1, 40.0, 28.5, 2.9, 1.5],
+        ["Relation with teacher",16.2, 37.8, 38.4, 6.8, 0.8],
+        ["School Facilities",11.4, 29.8, 39.0, 14.8, 4.9],
+        ["School environment",12.2, 26.5, 42.0, 14.9, 4.4],
+        ["specialism",13.5, 29.7, 43.4, 11.1, 2.4],
+        ["school life",13.7, 37.6, 43.3, 4.1, 1.2]
+        ]
+ 
+    data=SchoolData[1:]
 
-    Schooldata()
+    Schooldata(data)
     
     speech1=list()
     speech1=["Fellow-Citizens of the Senate and of the House of Representatives",
@@ -92,8 +95,8 @@ def lab10():
     "This oath I am now about to take, and in your presence: That if it shall be found during my administration of the Government I have in any instance violated willingly or knowingly the injunctions thereof, I may (besides incurring constitutional punishment) be subject to the upbraidings of all who are now witnesses of the present solemn ceremony"
     ]
     
-    Speech1()
-    Speech2()
+    Speech1(speech1)
+    Speech2(speech2)
     
     
     
